@@ -3,8 +3,9 @@
 namespace App\Http\Controllers\Api;
 
 use App\Http\Controllers\Controller;
+use App\Http\Requests\StoreTagRequest;
+use App\Http\Requests\UpdateTagRequest;
 use App\Providers\Models\Tag;
-use Illuminate\Http\Request;
 
 class TagController extends Controller
 {
@@ -20,13 +21,9 @@ class TagController extends Controller
     /**
      * Store a newly created resource in storage.
      */
-    public function store(Request $request)
+    public function store(StoreTagRequest $request)
     {
-        $request->validate([
-            'name' => 'required|string',
-        ]);
-
-        $tag = Tag::create($request->all());
+        $tag = Tag::create($request->validated());
         return response()->json($tag, 201);
     }
 
@@ -41,12 +38,9 @@ class TagController extends Controller
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, Tag $tag)
+    public function update(UpdateTagRequest $request, Tag $tag)
     {
-        $validate = $request->validate([
-            'name' => 'required|string',
-        ]);
-        $tag = $tag->update($validate);
+        $tag = $tag->update($request->validated());
         return response()->json($tag);
     }
 

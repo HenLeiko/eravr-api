@@ -3,9 +3,10 @@
 namespace App\Http\Controllers\Api;
 
 use App\Http\Controllers\Controller;
+use App\Http\Requests\StoreGameRequest;
+use App\Http\Requests\UpdateGameRequest;
 use App\Http\Resources\GameResource;
 use App\Providers\Models\Game;
-use Illuminate\Http\Request;
 
 class GameController extends Controller
 {
@@ -21,13 +22,9 @@ class GameController extends Controller
     /**
      * Store a newly created resource in storage.
      */
-    public function store(Request $request)
+    public function store(StoreGameRequest $request)
     {
-        $request->validate([
-            'name' => 'required|string',
-            'description' => 'nullable|string',
-        ]);
-        $game = Game::create($request->all());
+        $game = Game::create($request->validated());
         return response()->json(new GameResource($game), 201);
     }
 
@@ -42,13 +39,9 @@ class GameController extends Controller
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, Game $game)
+    public function update(UpdateGameRequest $request, Game $game)
     {
-        $validate = $request->validate([
-            'name' => 'sometimes|string',
-            'description' => 'sometimes|nullable|string',
-        ]);
-        $game->update($validate);
+        $game->update($request->validated());
         return response()->json(new GameResource($game), 200);
     }
 
