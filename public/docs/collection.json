@@ -10,7 +10,7 @@
     ],
     "info": {
         "name": "EraVR-Overdose",
-        "_postman_id": "b26101d8-2e02-4e82-bcb3-bd6604d2f511",
+        "_postman_id": "5f941d1b-8ec6-4c87-a3cc-8a265cbbce46",
         "description": "",
         "schema": "https:\/\/schema.getpostman.com\/json\/collection\/v2.1.0\/collection.json"
     },
@@ -93,7 +93,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\"email\":\"halie35@example.net\",\"password\":\"ipsum\"}"
+                            "raw": "{\"email\":\"fay.brooke@example.net\",\"password\":\"vel\"}"
                         },
                         "description": "",
                         "auth": {
@@ -124,7 +124,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\"name\":\"f\",\"email\":\"deion.dooley@example.com\",\"password\":\"grT-f2M.?%^G\\\\q;T=W<t\"}"
+                            "raw": "{\"name\":\"fvxkuxtsljle\",\"email\":\"lorenzo64@example.com\",\"password\":\"g)4b;iJ%Eb^}i+\"}"
                         },
                         "description": "",
                         "auth": {
@@ -207,7 +207,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\"name\":\"hdiwobgpojkpb\",\"description\":\"Voluptatibus pariatur placeat exercitationem necessitatibus quos consectetur quibusdam.\"}"
+                            "raw": "{\"name\":\"pxixocpgjllqwpqetzfnja\",\"description\":\"Reprehenderit consequatur tempore et qui.\",\"tags\":[\"labore\"]}"
                         },
                         "description": "",
                         "auth": {
@@ -306,7 +306,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\"name\":\"qznhlpca\",\"description\":\"Dolor consequatur ut qui.\"}"
+                            "raw": "{\"name\":\"wzip\",\"description\":\"Voluptas minima beatae et illum necessitatibus est qui.\"}"
                         },
                         "description": "",
                         "auth": {
@@ -425,7 +425,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\"name\":\"dolor\"}"
+                            "raw": "{\"name\":\"enim\"}"
                         },
                         "description": "",
                         "auth": {
@@ -524,7 +524,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\"name\":\"u\"}"
+                            "raw": "{\"name\":\"jk\"}"
                         },
                         "description": "",
                         "auth": {
@@ -545,12 +545,54 @@
                                 {
                                     "id": "id",
                                     "key": "id",
-                                    "value": "est",
+                                    "value": "ipsa",
                                     "description": "The ID of the tag."
                                 }
                             ]
                         },
                         "method": "DELETE",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "POST api\/games\/{game_id}\/tags\/{tag_id}",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/games\/:game_id\/tags\/:tag_id",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/games\/:game_id\/tags\/:tag_id",
+                            "variable": [
+                                {
+                                    "id": "game_id",
+                                    "key": "game_id",
+                                    "value": "1",
+                                    "description": "The ID of the game."
+                                },
+                                {
+                                    "id": "tag_id",
+                                    "key": "tag_id",
+                                    "value": "1",
+                                    "description": "The ID of the tag."
+                                }
+                            ]
+                        },
+                        "method": "POST",
                         "header": [
                             {
                                 "key": "Content-Type",

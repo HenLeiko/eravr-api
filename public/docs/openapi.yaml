@@ -48,12 +48,12 @@ paths:
                 email:
                   type: string
                   description: 'Must be a valid email address.'
-                  example: halie35@example.net
+                  example: fay.brooke@example.net
                   nullable: false
                 password:
                   type: string
                   description: ''
-                  example: ipsum
+                  example: vel
                   nullable: false
               required:
                 - email
@@ -78,17 +78,17 @@ paths:
                 name:
                   type: string
                   description: 'Must not be greater than 255 characters.'
-                  example: f
+                  example: fvxkuxtsljle
                   nullable: false
                 email:
                   type: string
                   description: 'Must be a valid email address. Must not be greater than 255 characters.'
-                  example: deion.dooley@example.com
+                  example: lorenzo64@example.com
                   nullable: false
                 password:
                   type: string
                   description: 'Must be at least 6 characters.'
-                  example: 'grT-f2M.?%^G\q;T=W<t'
+                  example: 'g)4b;iJ%Eb^}i+'
                   nullable: false
               required:
                 - name
@@ -135,13 +135,20 @@ paths:
                 name:
                   type: string
                   description: 'Must not be greater than 255 characters.'
-                  example: hdiwobgpojkpb
+                  example: pxixocpgjllqwpqetzfnja
                   nullable: false
                 description:
                   type: string
                   description: ''
-                  example: 'Voluptatibus pariatur placeat exercitationem necessitatibus quos consectetur quibusdam.'
+                  example: 'Reprehenderit consequatur tempore et qui.'
                   nullable: true
+                tags:
+                  type: array
+                  description: 'The <code>id</code> of an existing record in the tags table.'
+                  example:
+                    - labore
+                  items:
+                    type: string
               required:
                 - name
       security: []
@@ -185,12 +192,12 @@ paths:
                 name:
                   type: string
                   description: 'Must not be greater than 255 characters.'
-                  example: qznhlpca
+                  example: wzip
                   nullable: false
                 description:
                   type: string
                   description: ''
-                  example: 'Dolor consequatur ut qui.'
+                  example: 'Voluptas minima beatae et illum necessitatibus est qui.'
                   nullable: false
       security: []
     delete:
@@ -251,7 +258,7 @@ paths:
                 name:
                   type: string
                   description: ''
-                  example: dolor
+                  example: enim
                   nullable: false
               required:
                 - name
@@ -296,7 +303,7 @@ paths:
                 name:
                   type: string
                   description: 'Must not be greater than 255 characters.'
-                  example: u
+                  example: jk
                   nullable: false
               required:
                 - name
@@ -314,6 +321,33 @@ paths:
       -
         in: path
         name: id
+        description: 'The ID of the tag.'
+        example: 1
+        required: true
+        schema:
+          type: integer
+  '/api/games/{game_id}/tags/{tag_id}':
+    post:
+      summary: ''
+      operationId: postApiGamesGame_idTagsTag_id
+      description: ''
+      parameters: []
+      responses: {  }
+      tags:
+        - Endpoints
+      security: []
+    parameters:
+      -
+        in: path
+        name: game_id
+        description: 'The ID of the game.'
+        example: 1
+        required: true
+        schema:
+          type: integer
+      -
+        in: path
+        name: tag_id
         description: 'The ID of the tag.'
         example: 1
         required: true

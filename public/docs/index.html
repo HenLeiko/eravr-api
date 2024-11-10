@@ -110,6 +110,9 @@
                                                                                 <li class="tocify-item level-2" data-unique="endpoints-DELETEapi-tags--id-">
                                 <a href="#endpoints-DELETEapi-tags--id-">Remove the specified resource from storage.</a>
                             </li>
+                                                                                <li class="tocify-item level-2" data-unique="endpoints-POSTapi-games--game_id--tags--tag_id-">
+                                <a href="#endpoints-POSTapi-games--game_id--tags--tag_id-">POST api/games/{game_id}/tags/{tag_id}</a>
+                            </li>
                                                                                 <li class="tocify-item level-2" data-unique="endpoints-POSTapi-logout">
                                 <a href="#endpoints-POSTapi-logout">POST api/logout</a>
                             </li>
@@ -288,8 +291,8 @@ You can check the Dev Tools console for debugging information.</code></pre>
     --header "Content-Type: application/json" \
     --header "Accept: application/json" \
     --data "{
-    \"email\": \"halie35@example.net\",
-    \"password\": \"ipsum\"
+    \"email\": \"fay.brooke@example.net\",
+    \"password\": \"vel\"
 }"
 </code></pre></div>
 
@@ -305,8 +308,8 @@ const headers = {
 };
 
 let body = {
-    "email": "halie35@example.net",
-    "password": "ipsum"
+    "email": "fay.brooke@example.net",
+    "password": "vel"
 };
 
 fetch(url, {
@@ -395,10 +398,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="email"                data-endpoint="POSTapi-login"
-               value="halie35@example.net"
+               value="fay.brooke@example.net"
                data-component="body">
     <br>
-<p>Must be a valid email address. Example: <code>halie35@example.net</code></p>
+<p>Must be a valid email address. Example: <code>fay.brooke@example.net</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>password</code></b>&nbsp;&nbsp;
@@ -406,10 +409,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="password"                data-endpoint="POSTapi-login"
-               value="ipsum"
+               value="vel"
                data-component="body">
     <br>
-<p>Example: <code>ipsum</code></p>
+<p>Example: <code>vel</code></p>
         </div>
         </form>
 
@@ -430,9 +433,9 @@ You can check the Dev Tools console for debugging information.</code></pre>
     --header "Content-Type: application/json" \
     --header "Accept: application/json" \
     --data "{
-    \"name\": \"f\",
-    \"email\": \"deion.dooley@example.com\",
-    \"password\": \"grT-f2M.?%^G\\\\q;T=W&lt;t\"
+    \"name\": \"fvxkuxtsljle\",
+    \"email\": \"lorenzo64@example.com\",
+    \"password\": \"g)4b;iJ%Eb^}i+\"
 }"
 </code></pre></div>
 
@@ -448,9 +451,9 @@ const headers = {
 };
 
 let body = {
-    "name": "f",
-    "email": "deion.dooley@example.com",
-    "password": "grT-f2M.?%^G\\q;T=W&lt;t"
+    "name": "fvxkuxtsljle",
+    "email": "lorenzo64@example.com",
+    "password": "g)4b;iJ%Eb^}i+"
 };
 
 fetch(url, {
@@ -539,10 +542,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="name"                data-endpoint="POSTapi-register"
-               value="f"
+               value="fvxkuxtsljle"
                data-component="body">
     <br>
-<p>Must not be greater than 255 characters. Example: <code>f</code></p>
+<p>Must not be greater than 255 characters. Example: <code>fvxkuxtsljle</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>email</code></b>&nbsp;&nbsp;
@@ -550,10 +553,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="email"                data-endpoint="POSTapi-register"
-               value="deion.dooley@example.com"
+               value="lorenzo64@example.com"
                data-component="body">
     <br>
-<p>Must be a valid email address. Must not be greater than 255 characters. Example: <code>deion.dooley@example.com</code></p>
+<p>Must be a valid email address. Must not be greater than 255 characters. Example: <code>lorenzo64@example.com</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>password</code></b>&nbsp;&nbsp;
@@ -561,10 +564,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="password"                data-endpoint="POSTapi-register"
-               value="grT-f2M.?%^G\q;T=W<t"
+               value="g)4b;iJ%Eb^}i+"
                data-component="body">
     <br>
-<p>Must be at least 6 characters. Example: <code>grT-f2M.?%^G\q;T=W&lt;t</code></p>
+<p>Must be at least 6 characters. Example: <code>g)4b;iJ%Eb^}i+</code></p>
         </div>
         </form>
 
@@ -710,8 +713,11 @@ You can check the Dev Tools console for debugging information.</code></pre>
     --header "Content-Type: application/json" \
     --header "Accept: application/json" \
     --data "{
-    \"name\": \"hdiwobgpojkpb\",
-    \"description\": \"Voluptatibus pariatur placeat exercitationem necessitatibus quos consectetur quibusdam.\"
+    \"name\": \"pxixocpgjllqwpqetzfnja\",
+    \"description\": \"Reprehenderit consequatur tempore et qui.\",
+    \"tags\": [
+        \"labore\"
+    ]
 }"
 </code></pre></div>
 
@@ -727,8 +733,11 @@ const headers = {
 };
 
 let body = {
-    "name": "hdiwobgpojkpb",
-    "description": "Voluptatibus pariatur placeat exercitationem necessitatibus quos consectetur quibusdam."
+    "name": "pxixocpgjllqwpqetzfnja",
+    "description": "Reprehenderit consequatur tempore et qui.",
+    "tags": [
+        "labore"
+    ]
 };
 
 fetch(url, {
@@ -817,10 +826,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="name"                data-endpoint="POSTapi-games"
-               value="hdiwobgpojkpb"
+               value="pxixocpgjllqwpqetzfnja"
                data-component="body">
     <br>
-<p>Must not be greater than 255 characters. Example: <code>hdiwobgpojkpb</code></p>
+<p>Must not be greater than 255 characters. Example: <code>pxixocpgjllqwpqetzfnja</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>description</code></b>&nbsp;&nbsp;
@@ -828,10 +837,23 @@ You can check the Dev Tools console for debugging information.</code></pre>
 <i>optional</i> &nbsp;
                 <input type="text" style="display: none"
                               name="description"                data-endpoint="POSTapi-games"
-               value="Voluptatibus pariatur placeat exercitationem necessitatibus quos consectetur quibusdam."
+               value="Reprehenderit consequatur tempore et qui."
                data-component="body">
     <br>
-<p>Example: <code>Voluptatibus pariatur placeat exercitationem necessitatibus quos consectetur quibusdam.</code></p>
+<p>Example: <code>Reprehenderit consequatur tempore et qui.</code></p>
+        </div>
+                <div style=" padding-left: 28px;  clear: unset;">
+            <b style="line-height: 2;"><code>tags</code></b>&nbsp;&nbsp;
+<small>string[]</small>&nbsp;
+<i>optional</i> &nbsp;
+                <input type="text" style="display: none"
+                              name="tags[0]"                data-endpoint="POSTapi-games"
+               data-component="body">
+        <input type="text" style="display: none"
+               name="tags[1]"                data-endpoint="POSTapi-games"
+               data-component="body">
+    <br>
+<p>The <code>id</code> of an existing record in the tags table.</p>
         </div>
         </form>
 
@@ -989,8 +1011,8 @@ You can check the Dev Tools console for debugging information.</code></pre>
     --header "Content-Type: application/json" \
     --header "Accept: application/json" \
     --data "{
-    \"name\": \"qznhlpca\",
-    \"description\": \"Dolor consequatur ut qui.\"
+    \"name\": \"wzip\",
+    \"description\": \"Voluptas minima beatae et illum necessitatibus est qui.\"
 }"
 </code></pre></div>
 
@@ -1006,8 +1028,8 @@ const headers = {
 };
 
 let body = {
-    "name": "qznhlpca",
-    "description": "Dolor consequatur ut qui."
+    "name": "wzip",
+    "description": "Voluptas minima beatae et illum necessitatibus est qui."
 };
 
 fetch(url, {
@@ -1112,10 +1134,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
 <i>optional</i> &nbsp;
                 <input type="text" style="display: none"
                               name="name"                data-endpoint="PUTapi-games--id-"
-               value="qznhlpca"
+               value="wzip"
                data-component="body">
     <br>
-<p>Must not be greater than 255 characters. Example: <code>qznhlpca</code></p>
+<p>Must not be greater than 255 characters. Example: <code>wzip</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>description</code></b>&nbsp;&nbsp;
@@ -1123,10 +1145,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
 <i>optional</i> &nbsp;
                 <input type="text" style="display: none"
                               name="description"                data-endpoint="PUTapi-games--id-"
-               value="Dolor consequatur ut qui."
+               value="Voluptas minima beatae et illum necessitatibus est qui."
                data-component="body">
     <br>
-<p>Example: <code>Dolor consequatur ut qui.</code></p>
+<p>Example: <code>Voluptas minima beatae et illum necessitatibus est qui.</code></p>
         </div>
         </form>
 
@@ -1392,7 +1414,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
     --header "Content-Type: application/json" \
     --header "Accept: application/json" \
     --data "{
-    \"name\": \"dolor\"
+    \"name\": \"enim\"
 }"
 </code></pre></div>
 
@@ -1408,7 +1430,7 @@ const headers = {
 };
 
 let body = {
-    "name": "dolor"
+    "name": "enim"
 };
 
 fetch(url, {
@@ -1497,10 +1519,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="name"                data-endpoint="POSTapi-tags"
-               value="dolor"
+               value="enim"
                data-component="body">
     <br>
-<p>Example: <code>dolor</code></p>
+<p>Example: <code>enim</code></p>
         </div>
         </form>
 
@@ -1658,7 +1680,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
     --header "Content-Type: application/json" \
     --header "Accept: application/json" \
     --data "{
-    \"name\": \"u\"
+    \"name\": \"jk\"
 }"
 </code></pre></div>
 
@@ -1674,7 +1696,7 @@ const headers = {
 };
 
 let body = {
-    "name": "u"
+    "name": "jk"
 };
 
 fetch(url, {
@@ -1779,10 +1801,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="name"                data-endpoint="PUTapi-tags--id-"
-               value="u"
+               value="jk"
                data-component="body">
     <br>
-<p>Must not be greater than 255 characters. Example: <code>u</code></p>
+<p>Must not be greater than 255 characters. Example: <code>jk</code></p>
         </div>
         </form>
 
@@ -1799,14 +1821,14 @@ You can check the Dev Tools console for debugging information.</code></pre>
 
 <div class="bash-example">
     <pre><code class="language-bash">curl --request DELETE \
-    "http://localhost:8000/api/tags/est" \
+    "http://localhost:8000/api/tags/ipsa" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json"</code></pre></div>
 
 
 <div class="javascript-example">
     <pre><code class="language-javascript">const url = new URL(
-    "http://localhost:8000/api/tags/est"
+    "http://localhost:8000/api/tags/ipsa"
 );
 
 const headers = {
@@ -1899,10 +1921,141 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="id"                data-endpoint="DELETEapi-tags--id-"
-               value="est"
+               value="ipsa"
                data-component="url">
     <br>
-<p>The ID of the tag. Example: <code>est</code></p>
+<p>The ID of the tag. Example: <code>ipsa</code></p>
+            </div>
+                    </form>
+
+                    <h2 id="endpoints-POSTapi-games--game_id--tags--tag_id-">POST api/games/{game_id}/tags/{tag_id}</h2>
+
+<p>
+</p>
+
+
+
+<span id="example-requests-POSTapi-games--game_id--tags--tag_id-">
+<blockquote>Example request:</blockquote>
+
+
+<div class="bash-example">
+    <pre><code class="language-bash">curl --request POST \
+    "http://localhost:8000/api/games/1/tags/1" \
+    --header "Content-Type: application/json" \
+    --header "Accept: application/json"</code></pre></div>
+
+
+<div class="javascript-example">
+    <pre><code class="language-javascript">const url = new URL(
+    "http://localhost:8000/api/games/1/tags/1"
+);
+
+const headers = {
+    "Content-Type": "application/json",
+    "Accept": "application/json",
+};
+
+fetch(url, {
+    method: "POST",
+    headers,
+}).then(response =&gt; response.json());</code></pre></div>
+
+</span>
+
+<span id="example-responses-POSTapi-games--game_id--tags--tag_id-">
+</span>
+<span id="execution-results-POSTapi-games--game_id--tags--tag_id-" hidden>
+    <blockquote>Received response<span
+                id="execution-response-status-POSTapi-games--game_id--tags--tag_id-"></span>:
+    </blockquote>
+    <pre class="json"><code id="execution-response-content-POSTapi-games--game_id--tags--tag_id-"
+      data-empty-response-text="<Empty response>" style="max-height: 400px;"></code></pre>
+</span>
+<span id="execution-error-POSTapi-games--game_id--tags--tag_id-" hidden>
+    <blockquote>Request failed with error:</blockquote>
+    <pre><code id="execution-error-message-POSTapi-games--game_id--tags--tag_id-">
+
+Tip: Check that you&#039;re properly connected to the network.
+If you&#039;re a maintainer of ths API, verify that your API is running and you&#039;ve enabled CORS.
+You can check the Dev Tools console for debugging information.</code></pre>
+</span>
+<form id="form-POSTapi-games--game_id--tags--tag_id-" data-method="POST"
+      data-path="api/games/{game_id}/tags/{tag_id}"
+      data-authed="0"
+      data-hasfiles="0"
+      data-isarraybody="0"
+      autocomplete="off"
+      onsubmit="event.preventDefault(); executeTryOut('POSTapi-games--game_id--tags--tag_id-', this);">
+    <h3>
+        Request&nbsp;&nbsp;&nbsp;
+                    <button type="button"
+                    style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-tryout-POSTapi-games--game_id--tags--tag_id-"
+                    onclick="tryItOut('POSTapi-games--game_id--tags--tag_id-');">Try it out ⚡
+            </button>
+            <button type="button"
+                    style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-canceltryout-POSTapi-games--game_id--tags--tag_id-"
+                    onclick="cancelTryOut('POSTapi-games--game_id--tags--tag_id-');" hidden>Cancel 🛑
+            </button>&nbsp;&nbsp;
+            <button type="submit"
+                    style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-executetryout-POSTapi-games--game_id--tags--tag_id-"
+                    data-initial-text="Send Request 💥"
+                    data-loading-text="⏱ Sending..."
+                    hidden>Send Request 💥
+            </button>
+            </h3>
+            <p>
+            <small class="badge badge-black">POST</small>
+            <b><code>api/games/{game_id}/tags/{tag_id}</code></b>
+        </p>
+                <h4 class="fancy-heading-panel"><b>Headers</b></h4>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Content-Type</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Content-Type"                data-endpoint="POSTapi-games--game_id--tags--tag_id-"
+               value="application/json"
+               data-component="header">
+    <br>
+<p>Example: <code>application/json</code></p>
+            </div>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Accept</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Accept"                data-endpoint="POSTapi-games--game_id--tags--tag_id-"
+               value="application/json"
+               data-component="header">
+    <br>
+<p>Example: <code>application/json</code></p>
+            </div>
+                        <h4 class="fancy-heading-panel"><b>URL Parameters</b></h4>
+                    <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>game_id</code></b>&nbsp;&nbsp;
+<small>integer</small>&nbsp;
+ &nbsp;
+                <input type="number" style="display: none"
+               step="any"               name="game_id"                data-endpoint="POSTapi-games--game_id--tags--tag_id-"
+               value="1"
+               data-component="url">
+    <br>
+<p>The ID of the game. Example: <code>1</code></p>
+            </div>
+                    <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>tag_id</code></b>&nbsp;&nbsp;
+<small>integer</small>&nbsp;
+ &nbsp;
+                <input type="number" style="display: none"
+               step="any"               name="tag_id"                data-endpoint="POSTapi-games--game_id--tags--tag_id-"
+               value="1"
+               data-component="url">
+    <br>
+<p>The ID of the tag. Example: <code>1</code></p>
             </div>
                     </form>
 

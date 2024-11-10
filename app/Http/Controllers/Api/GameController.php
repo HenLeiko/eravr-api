@@ -7,6 +7,7 @@ use App\Http\Requests\StoreGameRequest;
 use App\Http\Requests\UpdateGameRequest;
 use App\Http\Resources\GameResource;
 use App\Providers\Models\Game;
+use App\Providers\Models\Tag;
 
 class GameController extends Controller
 {
@@ -16,7 +17,7 @@ class GameController extends Controller
     public function index()
     {
         $games = Game::all();
-        return response()->json(GameResource::collection($games), 200);
+        return response()->json(GameResource::collection($games->load('tags')));
     }
 
     /**
@@ -24,8 +25,12 @@ class GameController extends Controller
      */
     public function store(StoreGameRequest $request)
     {
-        $game = Game::create($request->validated());
-        return response()->json(new GameResource($game), 201);
+        $game = Game::create($request->validated()->only(['name', 'description']));
+        if ($game->tags->isNotEmpty() && $game->tags) {
+            $tagsIds = $game->tags->pluck('id')->toArray();
+            $game->tags()->sync($tagsIds);
+        }
+        return response()->json(new GameResource($game->load('tags')), 201);
     }
 
     /**
@@ -42,7 +47,7 @@ class GameController extends Controller
     public function update(UpdateGameRequest $request, Game $game)
     {
         $game->update($request->validated());
-        return response()->json(new GameResource($game), 200);
+        return response()->json(new GameResource($game));
     }
 
     /**
@@ -52,5 +57,12 @@ class GameController extends Controller
     {
         $game->delete();
         return response()->json(null, 204);
+    }
+
+    public function setTag(Game $game, Tag $tag)
+    {
+        $game->tags()->attach($tag->id);
+        $game->load('tags');
+        return response()->json($game);
     }
 }

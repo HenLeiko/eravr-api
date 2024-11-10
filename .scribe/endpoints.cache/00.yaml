@@ -68,7 +68,7 @@ endpoints:
         name: email
         description: 'Must be a valid email address.'
         required: true
-        example: halie35@example.net
+        example: fay.brooke@example.net
         type: string
         enumValues: []
         exampleWasSpecified: false
@@ -78,15 +78,15 @@ endpoints:
         name: password
         description: ''
         required: true
-        example: ipsum
+        example: vel
         type: string
         enumValues: []
         exampleWasSpecified: false
         nullable: false
         custom: []
     cleanBodyParameters:
-      email: halie35@example.net
-      password: ipsum
+      email: fay.brooke@example.net
+      password: vel
     fileParameters: []
     responses: []
     responseFields: []
@@ -120,7 +120,7 @@ endpoints:
         name: name
         description: 'Must not be greater than 255 characters.'
         required: true
-        example: f
+        example: fvxkuxtsljle
         type: string
         enumValues: []
         exampleWasSpecified: false
@@ -130,7 +130,7 @@ endpoints:
         name: email
         description: 'Must be a valid email address. Must not be greater than 255 characters.'
         required: true
-        example: deion.dooley@example.com
+        example: lorenzo64@example.com
         type: string
         enumValues: []
         exampleWasSpecified: false
@@ -140,16 +140,16 @@ endpoints:
         name: password
         description: 'Must be at least 6 characters.'
         required: true
-        example: 'grT-f2M.?%^G\q;T=W<t'
+        example: 'g)4b;iJ%Eb^}i+'
         type: string
         enumValues: []
         exampleWasSpecified: false
         nullable: false
         custom: []
     cleanBodyParameters:
-      name: f
-      email: deion.dooley@example.com
-      password: 'grT-f2M.?%^G\q;T=W<t'
+      name: fvxkuxtsljle
+      email: lorenzo64@example.com
+      password: 'g)4b;iJ%Eb^}i+'
     fileParameters: []
     responses: []
     responseFields: []
@@ -223,7 +223,7 @@ endpoints:
         name: name
         description: 'Must not be greater than 255 characters.'
         required: true
-        example: hdiwobgpojkpb
+        example: pxixocpgjllqwpqetzfnja
         type: string
         enumValues: []
         exampleWasSpecified: false
@@ -233,15 +233,28 @@ endpoints:
         name: description
         description: ''
         required: false
-        example: 'Voluptatibus pariatur placeat exercitationem necessitatibus quos consectetur quibusdam.'
+        example: 'Reprehenderit consequatur tempore et qui.'
         type: string
         enumValues: []
         exampleWasSpecified: false
         nullable: true
         custom: []
+      tags:
+        name: tags
+        description: 'The <code>id</code> of an existing record in the tags table.'
+        required: false
+        example:
+          - labore
+        type: 'string[]'
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: false
+        custom: []
     cleanBodyParameters:
-      name: hdiwobgpojkpb
-      description: 'Voluptatibus pariatur placeat exercitationem necessitatibus quos consectetur quibusdam.'
+      name: pxixocpgjllqwpqetzfnja
+      description: 'Reprehenderit consequatur tempore et qui.'
+      tags:
+        - labore
     fileParameters: []
     responses: []
     responseFields: []
@@ -338,7 +351,7 @@ endpoints:
         name: name
         description: 'Must not be greater than 255 characters.'
         required: false
-        example: qznhlpca
+        example: wzip
         type: string
         enumValues: []
         exampleWasSpecified: false
@@ -348,15 +361,15 @@ endpoints:
         name: description
         description: ''
         required: false
-        example: 'Dolor consequatur ut qui.'
+        example: 'Voluptas minima beatae et illum necessitatibus est qui.'
         type: string
         enumValues: []
         exampleWasSpecified: false
         nullable: false
         custom: []
     cleanBodyParameters:
-      name: qznhlpca
-      description: 'Dolor consequatur ut qui.'
+      name: wzip
+      description: 'Voluptas minima beatae et illum necessitatibus est qui.'
     fileParameters: []
     responses: []
     responseFields: []
@@ -471,14 +484,14 @@ endpoints:
         name: name
         description: ''
         required: true
-        example: dolor
+        example: enim
         type: string
         enumValues: []
         exampleWasSpecified: false
         nullable: false
         custom: []
     cleanBodyParameters:
-      name: dolor
+      name: enim
     fileParameters: []
     responses: []
     responseFields: []
@@ -575,14 +588,14 @@ endpoints:
         name: name
         description: 'Must not be greater than 255 characters.'
         required: true
-        example: u
+        example: jk
         type: string
         enumValues: []
         exampleWasSpecified: false
         nullable: false
         custom: []
     cleanBodyParameters:
-      name: u
+      name: jk
     fileParameters: []
     responses: []
     responseFields: []
@@ -612,14 +625,66 @@ endpoints:
         name: id
         description: 'The ID of the tag.'
         required: true
-        example: est
+        example: ipsa
         type: string
         enumValues: []
         exampleWasSpecified: false
         nullable: false
         custom: []
     cleanUrlParameters:
-      id: est
+      id: ipsa
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters: []
+    cleanBodyParameters: []
+    fileParameters: []
+    responses: []
+    responseFields: []
+    auth: []
+    controller: null
+    method: null
+    route: null
+    custom: []
+  -
+    httpMethods:
+      - POST
+    uri: 'api/games/{game_id}/tags/{tag_id}'
+    metadata:
+      groupName: Endpoints
+      groupDescription: ''
+      subgroup: ''
+      subgroupDescription: ''
+      title: ''
+      description: ''
+      authenticated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters:
+      game_id:
+        name: game_id
+        description: 'The ID of the game.'
+        required: true
+        example: 1
+        type: integer
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: false
+        custom: []
+      tag_id:
+        name: tag_id
+        description: 'The ID of the tag.'
+        required: true
+        example: 1
+        type: integer
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: false
+        custom: []
+    cleanUrlParameters:
+      game_id: 1
+      tag_id: 1
     queryParameters: []
     cleanQueryParameters: []
     bodyParameters: []
