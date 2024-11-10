@@ -20,6 +20,7 @@ class GameResource extends JsonResource
             'description' => $this->description,
             'created_at' => $this->created_at->toDateTimeString(),
             'updated_at' => $this->updated_at->toDateTimeString(),
+            'tags' => $this->tags,
         ];
     }
 }

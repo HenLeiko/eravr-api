@@ -16,5 +16,6 @@ Route::post('/register', [AuthController::class, 'register']);
 route::middleware('auth:sanctum')->group(function () {
     Route::apiResource('games', GameController::class);
     Route::apiResource('tags', TagController::class);
+    Route::post('/games/{game}/tags/{tag}', [GameController::class, 'setTag']);
     Route::post('/logout', [AuthController::class, 'logout']);
 });
