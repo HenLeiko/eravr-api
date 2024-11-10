@@ -51,6 +51,17 @@ Use seeder for creation test data
 | :-------- | :------- | :-------------------------------- |
 | `id`      | `int`    | **Required**. Id of game to fetch |
 
+#### Post game
+
+```http
+  POST /api/games
+```
+
+| Parameter    | Type     | Description                |
+|:-------------|:---------|:---------------------------|
+| `name`       | `string` | **Required**. Name of game |
+| `description` | `string`  | Description of game        |
+ 
 #### Get all tags
 
 ```http
@@ -71,6 +82,24 @@ Use seeder for creation test data
 | :-------- | :------- | :-------------------------------- |
 | `id`      | `int`    | **Required**. Id of tag to fetch |
 
+```http
+  POST /api/tag
+```
+
+| Parameter | Type     | Description               |
+|:----------|:---------|:--------------------------|
+| `name`    | `string` | **Required**. Name of tag |
+
+
+#### Get documentation
+
+```http
+  GET {baseUrl}/api/docs
+```
+
+| Parameter | Type     | Description                       |
+| :-------- | :------- | :-------------------------------- |
+| `id`      | `int`    | **Required**. Id of tag to fetch |
 
 
 ## License
