@@ -25,7 +25,7 @@ class GameController extends Controller
      */
     public function store(StoreGameRequest $request)
     {
-        $game = Game::create($request->validated()->only(['name', 'description']));
+        $game = Game::create($request->validated());
         if ($game->tags->isNotEmpty() && $game->tags) {
             $tagsIds = $game->tags->pluck('id')->toArray();
             $game->tags()->sync($tagsIds);
@@ -38,7 +38,7 @@ class GameController extends Controller
      */
     public function show(Game $game)
     {
-        return response()->json(new GameResource($game), 200);
+        return response()->json(new GameResource($game));
     }
 
     /**

@@ -10,7 +10,7 @@
     ],
     "info": {
         "name": "EraVR-Overdose",
-        "_postman_id": "5f941d1b-8ec6-4c87-a3cc-8a265cbbce46",
+        "_postman_id": "6010d857-4bde-4ca2-90a3-8830707f09bd",
         "description": "",
         "schema": "https:\/\/schema.getpostman.com\/json\/collection\/v2.1.0\/collection.json"
     },
@@ -93,7 +93,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\"email\":\"fay.brooke@example.net\",\"password\":\"vel\"}"
+                            "raw": "{\"email\":\"cali37@example.net\",\"password\":\"doloremque\"}"
                         },
                         "description": "",
                         "auth": {
@@ -124,7 +124,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\"name\":\"fvxkuxtsljle\",\"email\":\"lorenzo64@example.com\",\"password\":\"g)4b;iJ%Eb^}i+\"}"
+                            "raw": "{\"name\":\"rdbydxmbprhorw\",\"email\":\"marco65@example.com\",\"password\":\"SiF\\\"E$7{d~!d278\"}"
                         },
                         "description": "",
                         "auth": {
@@ -207,7 +207,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\"name\":\"pxixocpgjllqwpqetzfnja\",\"description\":\"Reprehenderit consequatur tempore et qui.\",\"tags\":[\"labore\"]}"
+                            "raw": "{\"name\":\"rlkrntqeyuftiqzrkmpsp\",\"description\":\"Eligendi eos rerum et placeat.\",\"tags\":[\"non\"]}"
                         },
                         "description": "",
                         "auth": {
@@ -228,7 +228,7 @@
                                 {
                                     "id": "id",
                                     "key": "id",
-                                    "value": "1",
+                                    "value": "6",
                                     "description": "The ID of the game."
                                 }
                             ]
@@ -288,7 +288,7 @@
                                 {
                                     "id": "id",
                                     "key": "id",
-                                    "value": "1",
+                                    "value": "19",
                                     "description": "The ID of the game."
                                 }
                             ]
@@ -306,7 +306,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\"name\":\"wzip\",\"description\":\"Voluptas minima beatae et illum necessitatibus est qui.\"}"
+                            "raw": "{\"name\":\"iicp\",\"description\":\"Voluptatibus omnis nemo velit sit omnis ab.\"}"
                         },
                         "description": "",
                         "auth": {
@@ -327,7 +327,7 @@
                                 {
                                     "id": "id",
                                     "key": "id",
-                                    "value": "1",
+                                    "value": "15",
                                     "description": "The ID of the game."
                                 }
                             ]
@@ -425,7 +425,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\"name\":\"enim\"}"
+                            "raw": "{\"name\":\"voluptatem\"}"
                         },
                         "description": "",
                         "auth": {
@@ -446,7 +446,7 @@
                                 {
                                     "id": "id",
                                     "key": "id",
-                                    "value": "1",
+                                    "value": "13",
                                     "description": "The ID of the tag."
                                 }
                             ]
@@ -506,7 +506,7 @@
                                 {
                                     "id": "id",
                                     "key": "id",
-                                    "value": "1",
+                                    "value": "8",
                                     "description": "The ID of the tag."
                                 }
                             ]
@@ -524,7 +524,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\"name\":\"jk\"}"
+                            "raw": "{\"name\":\"uvvsonpdofoanrgufdikb\"}"
                         },
                         "description": "",
                         "auth": {
@@ -545,7 +545,7 @@
                                 {
                                     "id": "id",
                                     "key": "id",
-                                    "value": "ipsa",
+                                    "value": "adipisci",
                                     "description": "The ID of the tag."
                                 }
                             ]
@@ -581,13 +581,13 @@
                                 {
                                     "id": "game_id",
                                     "key": "game_id",
-                                    "value": "1",
+                                    "value": "9",
                                     "description": "The ID of the game."
                                 },
                                 {
                                     "id": "tag_id",
                                     "key": "tag_id",
-                                    "value": "1",
+                                    "value": "5",
                                     "description": "The ID of the tag."
                                 }
                             ]
