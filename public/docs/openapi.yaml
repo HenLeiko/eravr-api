@@ -48,12 +48,12 @@ paths:
                 email:
                   type: string
                   description: 'Must be a valid email address.'
-                  example: charlene66@example.org
+                  example: madonna23@example.com
                   nullable: false
                 password:
                   type: string
                   description: ''
-                  example: culpa
+                  example: iusto
                   nullable: false
               required:
                 - email
@@ -78,17 +78,17 @@ paths:
                 name:
                   type: string
                   description: 'Must not be greater than 255 characters.'
-                  example: tsghedtjsxflsqhip
+                  example: anvueujgwemxdtm
                   nullable: false
                 email:
                   type: string
                   description: 'Must be a valid email address. Must not be greater than 255 characters.'
-                  example: yshanahan@example.org
+                  example: haley.schoen@example.com
                   nullable: false
                 password:
                   type: string
                   description: 'Must be at least 6 characters.'
-                  example: '(U*?TZIbUk"jk{D'
+                  example: 'b/:aD2:'
                   nullable: false
               required:
                 - name
@@ -135,18 +135,18 @@ paths:
                 name:
                   type: string
                   description: 'Must not be greater than 255 characters.'
-                  example: guwlkpxjcxuzfeykpglw
+                  example: kqkx
                   nullable: false
                 description:
                   type: string
                   description: ''
-                  example: 'Et omnis dolorem dolorum sit.'
+                  example: 'Voluptatem doloremque rerum aliquid non magni nemo facilis.'
                   nullable: true
                 tags:
                   type: array
                   description: 'The <code>id</code> of an existing record in the tags table.'
                   example:
-                    - perspiciatis
+                    - et
                   items:
                     type: string
               required:
@@ -192,12 +192,12 @@ paths:
                 name:
                   type: string
                   description: 'Must not be greater than 255 characters.'
-                  example: b
+                  example: xufclgjew
                   nullable: false
                 description:
                   type: string
                   description: ''
-                  example: 'Vel sint voluptatem incidunt sed laboriosam sed corporis.'
+                  example: 'Dolorem dolor sint dolore et optio ut.'
                   nullable: false
       security: []
     delete:
@@ -258,7 +258,7 @@ paths:
                 name:
                   type: string
                   description: ''
-                  example: non
+                  example: incidunt
                   nullable: false
               required:
                 - name
@@ -303,7 +303,7 @@ paths:
                 name:
                   type: string
                   description: 'Must not be greater than 255 characters.'
-                  example: hwyvencfosp
+                  example: vcxgshr
                   nullable: false
               required:
                 - name

@@ -1,7 +1,11 @@
 <?php
 
+use App\Providers\Models\Game;
+use Faker\Factory as FakerFactory;
+
 it('can get list of games', function () {
-    $token ="4|NUr8ejdkvbonqxHhr43ab9j12NOOD9OE3lwmWjXzacfcc5c3";
+    $token = getAuthToken();
+    Game::factory()->create();
     $response = $this->withHeaders([
         'Authorization' => 'Bearer ' . $token,
     ])->get('/api/games');
@@ -9,39 +13,43 @@ it('can get list of games', function () {
 });
 
 it('can get a game', function () {
-   $token ="4|NUr8ejdkvbonqxHhr43ab9j12NOOD9OE3lwmWjXzacfcc5c3";
+   $token = getAuthToken();
+   $game = Game::factory()->create();
    $response = $this->withHeaders([
        'Authorization' => 'Bearer ' . $token,
-   ])->get('/api/games/1');
+   ])->get('/api/games/' . $game->id);
    $response->assertStatus(200);
 });
 
 it('can add a game', function () {
-   $token ="4|NUr8ejdkvbonqxHhr43ab9j12NOOD9OE3lwmWjXzacfcc5c3";
+   $token = getAuthToken();
+   $faker = FakerFactory::create();
    $response = $this->withHeaders([
        'Authorization' => 'Bearer ' . $token,
    ])->post('/api/games', [
-       'name' => 'Game 1',
-       'description' => 'Game 1 description',
+       'name' => $faker->name(),
+       'description' => $faker->text(),
    ]);
    $response->assertStatus(201);
 });
 
 it('can update a game', function () {
-    $token = '4|NUr8ejdkvbonqxHhr43ab9j12NOOD9OE3lwmWjXzacfcc5c3';
+    $token = getAuthToken();
+    $faker = FakerFactory::create();
+    $game = Game::factory()->create();
     $response = $this->withHeaders([
         'Authorization' => 'Bearer ' . $token,
-    ])->patch('/api/games/1', [
-        'name' => 'Game 2',
+    ])->patch('/api/games/' . $game->id, [
+        'name' => $faker->name(),
     ]);
-
     $response->assertStatus(200);
 });
 
 it('can delete a game', function () {
-    $token = '4|NUr8ejdkvbonqxHhr43ab9j12NOOD9OE3lwmWjXzacfcc5c3';
+    $token = getAuthToken();
+    $game = Game::factory()->create();
     $response = $this->withHeaders([
         'Authorization' => 'Bearer ' . $token,
-    ])->delete('/api/games/2');
+    ])->delete('/api/games/' . $game->id);
     $response->assertStatus(204);
 });

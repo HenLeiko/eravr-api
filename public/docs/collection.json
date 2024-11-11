@@ -10,7 +10,7 @@
     ],
     "info": {
         "name": "EraVR-Overdose",
-        "_postman_id": "ccd55634-f682-44b4-8256-354b4c945a46",
+        "_postman_id": "542405d6-2285-44fc-87c6-960294663707",
         "description": "",
         "schema": "https:\/\/schema.getpostman.com\/json\/collection\/v2.1.0\/collection.json"
     },
@@ -93,7 +93,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\"email\":\"charlene66@example.org\",\"password\":\"culpa\"}"
+                            "raw": "{\"email\":\"madonna23@example.com\",\"password\":\"iusto\"}"
                         },
                         "description": "",
                         "auth": {
@@ -124,7 +124,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\"name\":\"tsghedtjsxflsqhip\",\"email\":\"yshanahan@example.org\",\"password\":\"(U*?TZIbUk\\\"jk{D\"}"
+                            "raw": "{\"name\":\"anvueujgwemxdtm\",\"email\":\"haley.schoen@example.com\",\"password\":\"b\\\/:aD2:\"}"
                         },
                         "description": "",
                         "auth": {
@@ -207,7 +207,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\"name\":\"guwlkpxjcxuzfeykpglw\",\"description\":\"Et omnis dolorem dolorum sit.\",\"tags\":[\"perspiciatis\"]}"
+                            "raw": "{\"name\":\"kqkx\",\"description\":\"Voluptatem doloremque rerum aliquid non magni nemo facilis.\",\"tags\":[\"et\"]}"
                         },
                         "description": "",
                         "auth": {
@@ -306,7 +306,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\"name\":\"b\",\"description\":\"Vel sint voluptatem incidunt sed laboriosam sed corporis.\"}"
+                            "raw": "{\"name\":\"xufclgjew\",\"description\":\"Dolorem dolor sint dolore et optio ut.\"}"
                         },
                         "description": "",
                         "auth": {
@@ -425,7 +425,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\"name\":\"non\"}"
+                            "raw": "{\"name\":\"incidunt\"}"
                         },
                         "description": "",
                         "auth": {
@@ -524,7 +524,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\"name\":\"hwyvencfosp\"}"
+                            "raw": "{\"name\":\"vcxgshr\"}"
                         },
                         "description": "",
                         "auth": {
@@ -545,7 +545,7 @@
                                 {
                                     "id": "id",
                                     "key": "id",
-                                    "value": "dolorum",
+                                    "value": "quaerat",
                                     "description": "The ID of the tag."
                                 }
                             ]
