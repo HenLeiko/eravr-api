@@ -10,7 +10,7 @@
     ],
     "info": {
         "name": "EraVR-Overdose",
-        "_postman_id": "5f941d1b-8ec6-4c87-a3cc-8a265cbbce46",
+        "_postman_id": "542405d6-2285-44fc-87c6-960294663707",
         "description": "",
         "schema": "https:\/\/schema.getpostman.com\/json\/collection\/v2.1.0\/collection.json"
     },
@@ -93,7 +93,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\"email\":\"fay.brooke@example.net\",\"password\":\"vel\"}"
+                            "raw": "{\"email\":\"madonna23@example.com\",\"password\":\"iusto\"}"
                         },
                         "description": "",
                         "auth": {
@@ -124,7 +124,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\"name\":\"fvxkuxtsljle\",\"email\":\"lorenzo64@example.com\",\"password\":\"g)4b;iJ%Eb^}i+\"}"
+                            "raw": "{\"name\":\"anvueujgwemxdtm\",\"email\":\"haley.schoen@example.com\",\"password\":\"b\\\/:aD2:\"}"
                         },
                         "description": "",
                         "auth": {
@@ -207,7 +207,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\"name\":\"pxixocpgjllqwpqetzfnja\",\"description\":\"Reprehenderit consequatur tempore et qui.\",\"tags\":[\"labore\"]}"
+                            "raw": "{\"name\":\"kqkx\",\"description\":\"Voluptatem doloremque rerum aliquid non magni nemo facilis.\",\"tags\":[\"et\"]}"
                         },
                         "description": "",
                         "auth": {
@@ -306,7 +306,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\"name\":\"wzip\",\"description\":\"Voluptas minima beatae et illum necessitatibus est qui.\"}"
+                            "raw": "{\"name\":\"xufclgjew\",\"description\":\"Dolorem dolor sint dolore et optio ut.\"}"
                         },
                         "description": "",
                         "auth": {
@@ -425,7 +425,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\"name\":\"enim\"}"
+                            "raw": "{\"name\":\"incidunt\"}"
                         },
                         "description": "",
                         "auth": {
@@ -524,7 +524,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\"name\":\"jk\"}"
+                            "raw": "{\"name\":\"vcxgshr\"}"
                         },
                         "description": "",
                         "auth": {
@@ -545,7 +545,7 @@
                                 {
                                     "id": "id",
                                     "key": "id",
-                                    "value": "ipsa",
+                                    "value": "quaerat",
                                     "description": "The ID of the tag."
                                 }
                             ]

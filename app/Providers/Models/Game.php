@@ -4,18 +4,18 @@ namespace App\Providers\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 
 class Game extends Model
 {
-    /** @use HasFactory<\Database\Factories\GameFactory> */
     use HasFactory;
 
     protected $fillable = [
         'name',
-        'description'
+        'description',
     ];
 
-    public function tags()
+    public function tags(): BelongsToMany
     {
         return $this->belongsToMany(Tag::class);
     }
