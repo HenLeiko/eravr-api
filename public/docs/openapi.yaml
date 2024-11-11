@@ -48,12 +48,12 @@ paths:
                 email:
                   type: string
                   description: 'Must be a valid email address.'
-                  example: cali37@example.net
+                  example: charlene66@example.org
                   nullable: false
                 password:
                   type: string
                   description: ''
-                  example: doloremque
+                  example: culpa
                   nullable: false
               required:
                 - email
@@ -78,17 +78,17 @@ paths:
                 name:
                   type: string
                   description: 'Must not be greater than 255 characters.'
-                  example: rdbydxmbprhorw
+                  example: tsghedtjsxflsqhip
                   nullable: false
                 email:
                   type: string
                   description: 'Must be a valid email address. Must not be greater than 255 characters.'
-                  example: marco65@example.com
+                  example: yshanahan@example.org
                   nullable: false
                 password:
                   type: string
                   description: 'Must be at least 6 characters.'
-                  example: 'SiF"E$7{d~!d278'
+                  example: '(U*?TZIbUk"jk{D'
                   nullable: false
               required:
                 - name
@@ -135,18 +135,18 @@ paths:
                 name:
                   type: string
                   description: 'Must not be greater than 255 characters.'
-                  example: rlkrntqeyuftiqzrkmpsp
+                  example: guwlkpxjcxuzfeykpglw
                   nullable: false
                 description:
                   type: string
                   description: ''
-                  example: 'Eligendi eos rerum et placeat.'
+                  example: 'Et omnis dolorem dolorum sit.'
                   nullable: true
                 tags:
                   type: array
                   description: 'The <code>id</code> of an existing record in the tags table.'
                   example:
-                    - non
+                    - perspiciatis
                   items:
                     type: string
               required:
@@ -192,12 +192,12 @@ paths:
                 name:
                   type: string
                   description: 'Must not be greater than 255 characters.'
-                  example: iicp
+                  example: b
                   nullable: false
                 description:
                   type: string
                   description: ''
-                  example: 'Voluptatibus omnis nemo velit sit omnis ab.'
+                  example: 'Vel sint voluptatem incidunt sed laboriosam sed corporis.'
                   nullable: false
       security: []
     delete:
@@ -214,7 +214,7 @@ paths:
         in: path
         name: id
         description: 'The ID of the game.'
-        example: 6
+        example: 1
         required: true
         schema:
           type: integer
@@ -258,7 +258,7 @@ paths:
                 name:
                   type: string
                   description: ''
-                  example: voluptatem
+                  example: non
                   nullable: false
               required:
                 - name
@@ -303,7 +303,7 @@ paths:
                 name:
                   type: string
                   description: 'Must not be greater than 255 characters.'
-                  example: uvvsonpdofoanrgufdikb
+                  example: hwyvencfosp
                   nullable: false
               required:
                 - name
@@ -322,7 +322,7 @@ paths:
         in: path
         name: id
         description: 'The ID of the tag.'
-        example: 13
+        example: 1
         required: true
         schema:
           type: integer
@@ -341,7 +341,7 @@ paths:
         in: path
         name: game_id
         description: 'The ID of the game.'
-        example: 9
+        example: 1
         required: true
         schema:
           type: integer
@@ -349,7 +349,7 @@ paths:
         in: path
         name: tag_id
         description: 'The ID of the tag.'
-        example: 5
+        example: 1
         required: true
         schema:
           type: integer

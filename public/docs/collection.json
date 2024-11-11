@@ -10,7 +10,7 @@
     ],
     "info": {
         "name": "EraVR-Overdose",
-        "_postman_id": "6010d857-4bde-4ca2-90a3-8830707f09bd",
+        "_postman_id": "ccd55634-f682-44b4-8256-354b4c945a46",
         "description": "",
         "schema": "https:\/\/schema.getpostman.com\/json\/collection\/v2.1.0\/collection.json"
     },
@@ -93,7 +93,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\"email\":\"cali37@example.net\",\"password\":\"doloremque\"}"
+                            "raw": "{\"email\":\"charlene66@example.org\",\"password\":\"culpa\"}"
                         },
                         "description": "",
                         "auth": {
@@ -124,7 +124,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\"name\":\"rdbydxmbprhorw\",\"email\":\"marco65@example.com\",\"password\":\"SiF\\\"E$7{d~!d278\"}"
+                            "raw": "{\"name\":\"tsghedtjsxflsqhip\",\"email\":\"yshanahan@example.org\",\"password\":\"(U*?TZIbUk\\\"jk{D\"}"
                         },
                         "description": "",
                         "auth": {
@@ -207,7 +207,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\"name\":\"rlkrntqeyuftiqzrkmpsp\",\"description\":\"Eligendi eos rerum et placeat.\",\"tags\":[\"non\"]}"
+                            "raw": "{\"name\":\"guwlkpxjcxuzfeykpglw\",\"description\":\"Et omnis dolorem dolorum sit.\",\"tags\":[\"perspiciatis\"]}"
                         },
                         "description": "",
                         "auth": {
@@ -228,7 +228,7 @@
                                 {
                                     "id": "id",
                                     "key": "id",
-                                    "value": "6",
+                                    "value": "1",
                                     "description": "The ID of the game."
                                 }
                             ]
@@ -288,7 +288,7 @@
                                 {
                                     "id": "id",
                                     "key": "id",
-                                    "value": "19",
+                                    "value": "1",
                                     "description": "The ID of the game."
                                 }
                             ]
@@ -306,7 +306,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\"name\":\"iicp\",\"description\":\"Voluptatibus omnis nemo velit sit omnis ab.\"}"
+                            "raw": "{\"name\":\"b\",\"description\":\"Vel sint voluptatem incidunt sed laboriosam sed corporis.\"}"
                         },
                         "description": "",
                         "auth": {
@@ -327,7 +327,7 @@
                                 {
                                     "id": "id",
                                     "key": "id",
-                                    "value": "15",
+                                    "value": "1",
                                     "description": "The ID of the game."
                                 }
                             ]
@@ -425,7 +425,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\"name\":\"voluptatem\"}"
+                            "raw": "{\"name\":\"non\"}"
                         },
                         "description": "",
                         "auth": {
@@ -446,7 +446,7 @@
                                 {
                                     "id": "id",
                                     "key": "id",
-                                    "value": "13",
+                                    "value": "1",
                                     "description": "The ID of the tag."
                                 }
                             ]
@@ -506,7 +506,7 @@
                                 {
                                     "id": "id",
                                     "key": "id",
-                                    "value": "8",
+                                    "value": "1",
                                     "description": "The ID of the tag."
                                 }
                             ]
@@ -524,7 +524,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\"name\":\"uvvsonpdofoanrgufdikb\"}"
+                            "raw": "{\"name\":\"hwyvencfosp\"}"
                         },
                         "description": "",
                         "auth": {
@@ -545,7 +545,7 @@
                                 {
                                     "id": "id",
                                     "key": "id",
-                                    "value": "adipisci",
+                                    "value": "dolorum",
                                     "description": "The ID of the tag."
                                 }
                             ]
@@ -581,13 +581,13 @@
                                 {
                                     "id": "game_id",
                                     "key": "game_id",
-                                    "value": "9",
+                                    "value": "1",
                                     "description": "The ID of the game."
                                 },
                                 {
                                     "id": "tag_id",
                                     "key": "tag_id",
-                                    "value": "5",
+                                    "value": "1",
                                     "description": "The ID of the tag."
                                 }
                             ]
