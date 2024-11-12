@@ -38,7 +38,7 @@ Use seeder for creation test data
 ```
 
 | Parameter | Type     | Description                |
-| :-------- | :------- | :------------------------- |
+|:----------|:---------|:---------------------------|
 | `api_key` | `string` | **Required**. Your API key |
 
 #### Get game
@@ -47,9 +47,9 @@ Use seeder for creation test data
   GET /api/game/{id}
 ```
 
-| Parameter | Type     | Description                       |
-| :-------- | :------- | :-------------------------------- |
-| `id`      | `int`    | **Required**. Id of game to fetch |
+| Parameter | Type  | Description                       |
+|:----------|:------|:----------------------------------|
+| `id`      | `int` | **Required**. Id of game to fetch |
 
 #### Post game
 
@@ -57,10 +57,10 @@ Use seeder for creation test data
   POST /api/games
 ```
 
-| Parameter    | Type     | Description                |
-|:-------------|:---------|:---------------------------|
-| `name`       | `string` | **Required**. Name of game |
-| `description` | `string`  | Description of game        |
+| Parameter     | Type     | Description                |
+|:--------------|:---------|:---------------------------|
+| `name`        | `string` | **Required**. Name of game |
+| `description` | `string` | Description of game        |
  
 #### Get all tags
 
@@ -69,7 +69,7 @@ Use seeder for creation test data
 ```
 
 | Parameter | Type     | Description                |
-| :-------- | :------- | :------------------------- |
+|:----------|:---------|:---------------------------|
 | `api_key` | `string` | **Required**. Your API key |
 
 #### Get tag
@@ -78,9 +78,9 @@ Use seeder for creation test data
   GET /api/tag/{id}
 ```
 
-| Parameter | Type     | Description                       |
-| :-------- | :------- | :-------------------------------- |
-| `id`      | `int`    | **Required**. Id of tag to fetch |
+| Parameter | Type  | Description                      |
+|:----------|:------|:---------------------------------|
+| `id`      | `int` | **Required**. Id of tag to fetch |
 
 ```http
   POST /api/tag
@@ -90,17 +90,34 @@ Use seeder for creation test data
 |:----------|:---------|:--------------------------|
 | `name`    | `string` | **Required**. Name of tag |
 
-
-#### Get documentation
+#### User register
 
 ```http
-  GET {baseUrl}/api/docs
+  POST /api/register
 ```
 
-| Parameter | Type     | Description                       |
-| :-------- | :------- | :-------------------------------- |
-| `id`      | `int`    | **Required**. Id of tag to fetch |
+| Parameter  | Type     | Description                   |
+|:-----------|:---------|:------------------------------|
+| `name`     | `string` | **Required**. Name of account |
+| `email`    | `string` | Account email                 |
+| `password` | `string` | Account password              |
 
+#### User login
+
+```http
+  POST /api/login
+```
+
+| Parameter  | Type     | Description                   |
+|:-----------|:---------|:------------------------------|
+| `email`    | `string` | Account email                 |
+| `password` | `string` | Account password              |
+
+#### User logout
+
+```http
+  POST /api/logout
+```
 
 ## License
 
